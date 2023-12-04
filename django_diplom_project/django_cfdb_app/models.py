@@ -35,21 +35,6 @@ class Roles(models.Model):
         
         verbose_name = "roles"
         
-class RolesRaisers(models.Model):
-
-    ROLE_CHOICES = [
-        ("admin","Администратор"),
-        ("operator","Оператор БД"),
-        ("moderator","Модератор"),
-        ("user","Пользователь"),
-    ]
-
-    role_name = models.CharField("Роль", max_length=9, choices=ROLE_CHOICES, default="user")  
-
-    class Meta:
-        
-        verbose_name = "rolesraisers"
-
 
 class SpaceAchiv(models.Model):
 
